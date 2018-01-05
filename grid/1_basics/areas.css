@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #bada55;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.red {
+  background-color: red;
+}
+
+.darkblue {
+  background-color: darkblue;
+}
+
+.green {
+  background-color: green;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.gold {
+  background-color: gold;
+}
+
+.darkorange {
+  background-color: darkorange;
+}
+
+.container {
+  border: 2px solid black;
+  margin: auto;
+  width: inherit;
+  height: inherit;
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'sidebar main main main main main'
+    'sidebar main main main main main'
+    'sidebar main main main main main'
+    'sidebar main main main main main'
+    'sidebar main main main main main'
+    'footer footer footer footer footer footer';
+}
+
+.item-a {
+  grid-area: header;
+}
+
+.item-b {
+  grid-area: sidebar;
+}
+
+.item-c {
+  grid-area: main;
+}
+
+.item-d {
+  grid-area: footer;
+}
+
+.Gallery {
+  height: 100%;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  grid-gap: 1em;
+  padding: 1em;
+}
