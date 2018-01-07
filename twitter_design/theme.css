@@ -3,7 +3,6 @@
   --dark: #2f2f2e;
   --darklight: #383735;
   --lightgray: #eeeeee;
-  --lightgray: #eeeeee;
   --gray: #808080;
   --darkgray: #443434;
   --blue: #3aceec;
@@ -16,9 +15,9 @@
   --font-medium: 1.2em;
   --font-big: 1.5em;
 
-  /* sizes */
-  --size-small: 0.5em;
-  --size-normal: 1em;
-  --size-medium: 1.5em;
-  --size-big: 2em;
+  /* space */
+  --space-small: 0.5em;
+  --space-normal: 1em;
+  --space-medium: 1.5em;
+  --space-big: 2em;
 }
