@@ -1,1 +1,94 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* common */
+.Avatar {
+  max-width: 35px;
+  max-height: 35px;
+}
+/* common */
+
+.Join {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  height: 100vh;
+}
+
+.Splash {
+  border: 4px solid red;
+  grid-column: 1/6;
+  height: inherit;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-areas:
+    'picture picture picture picture picture'
+    'picture picture picture picture picture'
+    'picture picture picture picture picture'
+    'picture picture picture picture picture'
+    '. popular popular popular .'
+    '. tweet tweet tweet .'
+    '. tweet tweet tweet .'
+    'footer footer footer footer footer';
+}
+
+.Splash-picture {
+  background-color: darkorange;
+  grid-area: picture;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Splash-popular {
+  background-color: chocolate;
+  grid-area: popular;
+}
+
+.Splash-tweet {
+  grid-area: tweet;
+  background-color: hotpink;
+}
+
+.Footer {
+  background-color: gold;
+  grid-area: footer;
+}
+
+.Footer-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Signup {
+  background-color: gold;
+  border: 4px solid blue;
+  grid-column: 6/10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10%;
+}
+
+.Form {
+  width: 60%;
+  border: 4px solid green;
+}
+
+.Form-input {
+  width: 100%;
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+}
