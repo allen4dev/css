@@ -1,0 +1,12 @@
+.Home {
+  display: grid;
+  grid-template-rows: 4em 1fr;
+  height: 100vh;
+}
+
+.Home-content {
+  background-color: darkorange;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: 'userpanel main recommendations';
+}

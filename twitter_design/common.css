@@ -52,6 +52,22 @@
 }
 /* Tweet */
 
+/* Header */
+
+.Header {
+  background-color: darkred;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  /* justify-items: center; */
+}
+
+.Logo {
+  justify-self: center;
+}
+
+/* Header */
+
 /* Footer */
 .Footer {
   grid-area: footer;
