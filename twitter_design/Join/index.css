@@ -3,7 +3,7 @@
   grid-template-columns: repeat(9, 1fr);
   height: 100vh;
 }
-
+/* Splash */
 .Splash {
   background-color: var(--lightgray);
   grid-column: 1/6;
@@ -23,7 +23,10 @@
 }
 
 .Splash-picture {
-  background-color: darkorange;
+  background-image: url('http://lorempixel.com/800/600');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   grid-area: picture;
   display: flex;
   justify-content: center;
@@ -48,18 +51,59 @@
 }
 
 .Signup {
-  background-color: gold;
-  border: 4px solid blue;
   grid-column: 6/10;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 10%;
 }
+/* Splash */
+
+/* Signup */
+.Signup {
+  background-color: rgba(0, 0, 0, 0.5);
+  grid-column: 6/10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  height: inherit;
+  padding: 0 10%;
+}
+
+.Signup::before {
+  content: '';
+  background-image: url('http://lorempixel.com/600/1200');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -100;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.Signup-header {
+  margin-bottom: var(--space-normal);
+}
+
+.Signup-title {
+  color: var(--blue);
+  text-transform: capitalize;
+  font-size: var(--space-big);
+  margin: var(--space-small) 0;
+}
+
+.Signup-text {
+  color: white;
+}
 
 .Form {
   width: 60%;
-  border: 4px solid green;
 }
 
 .Form-input {
@@ -68,3 +112,20 @@
   padding: var(--space-small) var(--space-normal);
   margin-bottom: var(--space-normal);
 }
+
+.Form-inputLabel {
+  margin-bottom: var(--space-normal);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Form-label {
+  color: white;
+  margin-right: var(--space-small);
+}
+
+.Form-signupButton {
+  width: 100%;
+}
+/* Signup */

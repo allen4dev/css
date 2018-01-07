@@ -1,3 +1,21 @@
+.btn {
+  font-size: 1em;
+  padding: 0.5em 0.8em;
+  color: white;
+  border-radius: 0.2em;
+  border: none;
+}
+
+.btn-normal {
+  background-color: var(--blue);
+  border: none;
+}
+
+.btn-flat {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
 .Avatar {
   width: 45px;
   height: 45px;
