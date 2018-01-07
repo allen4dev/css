@@ -5,8 +5,11 @@
 }
 
 .Home-content {
-  background-color: darkorange;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas: 'userpanel main recommendations';
+}
+
+.Home-main {
+  background-color: darkgreen;
 }

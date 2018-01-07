@@ -101,6 +101,17 @@
 
 /* Header */
 
+/* UserPanel */
+.UserPanel {
+  background-color: darkred;
+}
+/* UserPanel */
+
+/* Recommendations */
+.Recommendations {
+  background-color: darkcyan;
+} /* Recommendations */
+
 /* Footer */
 .Footer {
   grid-area: footer;
