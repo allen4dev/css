@@ -55,15 +55,48 @@
 /* Header */
 
 .Header {
-  background-color: darkred;
+  background-color: var(--blue);
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
-  /* justify-items: center; */
 }
 
 .Logo {
   justify-self: center;
+}
+
+.Logo-title {
+  color: white;
+}
+
+.Navigation {
+  display: flex;
+}
+
+.Navigation-link {
+  text-decoration: none;
+  padding: var(--space-small);
+  display: block;
+  color: white;
+}
+
+.Navigation-link:not(:last-child) {
+  margin-right: var(--space-normal);
+}
+
+.Searchbar {
+  width: 100%;
+  height: 100%;
+}
+
+.Searchbar-input {
+  width: inherit;
+  height: inherit;
+  border: none;
+  background-color: var(--darkblue);
+  color: white;
+  padding: var(--space-small) var(--space-normal);
+  font-size: var(--font-medium);
 }
 
 /* Header */
