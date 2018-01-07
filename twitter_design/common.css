@@ -1,0 +1,35 @@
+.Avatar {
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* Tweet */
+.Tweet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Tweet-content {
+  flex-basis: 70%;
+}
+
+.Tweet-fullname {
+  color: var(--dark);
+  font-size: var(--font-medium);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.Tweet-username {
+  color: var(--gray);
+  font-weight: bold;
+}
+
+.Tweet-body {
+  color: var(--gray);
+}
+/* Tweet */

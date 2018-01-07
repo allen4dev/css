@@ -12,13 +12,6 @@ img {
   max-width: 100%;
 }
 
-/* common */
-.Avatar {
-  max-width: 35px;
-  max-height: 35px;
-}
-/* common */
-
 .Join {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
@@ -27,6 +20,7 @@ img {
 
 .Splash {
   border: 4px solid red;
+  background-color: var(--lightgray);
   grid-column: 1/6;
   height: inherit;
   display: grid;
@@ -52,13 +46,19 @@ img {
 }
 
 .Splash-popular {
-  background-color: chocolate;
   grid-area: popular;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .Splash-tweet {
   grid-area: tweet;
-  background-color: hotpink;
+}
+
+.Splash-tweet .Avatar {
+  width: 100px;
+  height: 100px;
 }
 
 .Footer {
@@ -88,7 +88,7 @@ img {
 
 .Form-input {
   width: 100%;
-  font-size: 1.2em;
-  padding: 0.5em 1em;
-  margin-bottom: 1em;
+  font-size: var(--font-medium);
+  padding: var(--size-small) var(--size-normal);
+  margin-bottom: var(--size-normal);
 }
