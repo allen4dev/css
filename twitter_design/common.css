@@ -32,7 +32,7 @@
 /* Tweet */
 .Tweet {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -271,6 +271,7 @@
 
 .Recommendations-follow {
   grid-area: follow;
+  padding: var(--space-normal);
 }
 
 .Recommendations-trends {
@@ -287,9 +288,14 @@
   align-items: center;
 }
 
+.Recommendation:not(:last-child) {
+  margin-bottom: var(--space-normal);
+}
+
 .Recommendation .Avatar {
   width: 60px;
   height: 60px;
+  margin-right: var(--space-normal);
 }
 
 .Recommendation-title {
