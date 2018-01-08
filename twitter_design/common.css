@@ -16,6 +16,11 @@
   border: 1px solid white;
 }
 
+.title {
+  padding: var(--space-small) var(--space-normal);
+  color: var(--gray);
+}
+
 .Avatar {
   width: 45px;
   height: 45px;
@@ -185,8 +190,23 @@
 
 /* Notifications */
 .Notifications {
-  background-color: darkred;
+  grid-row: 2/6;
 }
+
+.Notification {
+  display: flex;
+  align-items: center;
+  padding: var(--space-small) var(--space-normal);
+}
+
+.Notification-title {
+  font-size: var(--font-small);
+}
+
+.Notification .Avatar {
+  margin-right: var(--space-small);
+}
+
 /* Notifications */
 
 /* Recommendations */
