@@ -279,6 +279,7 @@
 
 .Recommendation-footer {
   grid-area: rfooter;
+  align-self: center;
 }
 
 .Recommendation {
@@ -307,10 +308,14 @@
   padding: var(--space-small) 0;
 }
 
-.Recommendations-trenLink {
+.Recommendations-trendLink {
   text-decoration: none;
   color: var(--gray);
   font-size: var(--font-medium);
+}
+
+.Recommendations .Footer-link {
+  font-size: var(--space-normal);
 }
 /* Recommendations */
 
