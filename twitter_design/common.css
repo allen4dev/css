@@ -287,8 +287,8 @@
 }
 
 .Recommendation .Avatar {
-  width: 75px;
-  height: 75px;
+  width: 60px;
+  height: 60px;
 }
 
 .Recommendation-title {
@@ -297,6 +297,20 @@
 
 .Recomendation-text {
   color: var(--gray);
+}
+
+.Recommendations-trendsList {
+  padding: var(--space-small) var(--space-medium);
+}
+
+.Recommendations-trend {
+  padding: var(--space-small) 0;
+}
+
+.Recommendations-trenLink {
+  text-decoration: none;
+  color: var(--gray);
+  font-size: var(--font-medium);
 }
 /* Recommendations */
 
