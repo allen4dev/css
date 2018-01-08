@@ -209,6 +209,36 @@
 
 /* Notifications */
 
+/* TweetBar */
+.TweetBar {
+  display: flex;
+  padding: var(--space-small) var(--space-normal);
+  background-color: white;
+}
+
+.TweetBar .Avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.TweetBar-form {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.TweetBar-input {
+  flex: 1;
+  margin: 0 2em;
+  padding: var(--space-small);
+  font-size: var(--font-normal);
+}
+/* TweetBar */
+
+/* TweetList */
+
+/* TweetList */
+
 /* Recommendations */
 .Recommendations {
   background-color: darkcyan;
