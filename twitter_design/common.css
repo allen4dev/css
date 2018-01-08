@@ -36,8 +36,16 @@
   justify-content: space-between;
 }
 
+.Tweet .Avatar {
+  margin-right: var(--space-normal);
+}
+
 .Tweet-content {
-  flex-basis: 70%;
+  flex: 1;
+}
+
+.Tweet-header {
+  margin-bottom: var(--space-small);
 }
 
 .Tweet-fullname {
@@ -236,18 +244,66 @@
 /* TweetBar */
 
 /* TweetList */
+.TweetList {
+  padding: var(--space-normal);
+}
+
+.TweetCard {
+  background-color: white;
+  padding: var(--space-small) var(--space-normal);
+}
+
+.TweetCard:not(:last-child) {
+  margin-bottom: var(--space-normal);
+}
 
 /* TweetList */
 
 /* Recommendations */
 .Recommendations {
-  background-color: darkcyan;
-} /* Recommendations */
+  display: grid;
+  grid-template-rows: 40% 40% 20%;
+  grid-template-areas:
+    'follow'
+    'trends'
+    'rfooter';
+}
+
+.Recommendations-follow {
+  grid-area: follow;
+}
+
+.Recommendations-trends {
+  grid-area: trends;
+}
+
+.Recommendation-footer {
+  grid-area: rfooter;
+}
+
+.Recommendation {
+  display: flex;
+  align-items: center;
+}
+
+.Recommendation .Avatar {
+  width: 75px;
+  height: 75px;
+}
+
+.Recommendation-title {
+  font-size: var(--font-medium);
+}
+
+.Recomendation-text {
+  color: var(--gray);
+}
+/* Recommendations */
 
 /* Footer */
 .Footer {
   grid-area: footer;
-  border-top: 1px solid var(--gray);
+  border-top: 1px solid var(--lightgray);
 }
 
 .Footer-list {

@@ -12,5 +12,5 @@
 }
 
 .Home-main {
-  background-color: darkgreen;
+  background-color: var(--lightgray);
 }
