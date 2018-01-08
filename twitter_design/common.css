@@ -103,9 +103,91 @@
 
 /* UserPanel */
 .UserPanel {
-  background-color: darkred;
+  display: grid;
+  grid-template-rows: 2fr 4fr;
+}
+
+.UserCard {
+  grid-row: 1/2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.UserCard .Avatar {
+  width: 6em;
+  height: 6em;
+  position: absolute;
+  top: calc(60% - 3em);
+  left: 4%;
+}
+
+.UserCard-photo {
+  flex-basis: 60%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.UserCard-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.UserCard-header {
+  width: 55%;
+  padding: var(--space-small) 0;
+  font-size: var(--font-small);
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: right;
+}
+
+.UserCard-location {
+  color: var(--dark);
+  margin-bottom: var(--space-small);
+}
+
+.UserCard-edit {
+  text-decoration: none;
+  color: var(--gray);
+}
+
+.UserCard-list {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.UserCard-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.UserCard-count {
+  color: var(--darkgray);
+  font-size: var(--font-medium);
+}
+
+.UserCard-detail {
+  font-size: 0.7em;
+  text-transform: uppercase;
 }
 /* UserPanel */
+
+/* Notifications */
+.Notifications {
+  background-color: darkred;
+}
+/* Notifications */
 
 /* Recommendations */
 .Recommendations {
